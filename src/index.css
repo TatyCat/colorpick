@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700|Lato:700');
 :root {
-  font: 16px / 1 sans-serif;
+  font: 16px / 1 'Arvo', serif;
 }
 
 html {
@@ -9,4 +10,87 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+}
+
+/* Header */
+
+header {
+  background-color: rgb(247, 247, 246);
+  font-size: calc(1.5vh + 1.5vw);
+  font-family: 'Lato', 'Arvo', serif;
+  border-bottom: solid 2px rgb(246, 246, 244);
+}
+
+h1 {
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+  text-shadow: rgb(116, 116, 116) -1px .5px .5px;
+  letter-spacing: .3ch;
+  word-spacing: .5ch;
+}
+
+/* Slide/Main */
+
+.slidecontainer {
+  width: 100%;
+}
+
+#slider-results {
+  font-size: 4.5vh;
+  text-align: center;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 20px;
+  background: #dedcdc;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.slider::-moz-range-thumb {
+  height: 80%;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+#color-results {
+  padding: 5rem;
+  background-color: black;
+  margin-bottom: 2rem;
+}
+
+article button {
+  display: block;
+  margin: 2rem auto;
+  margin-bottom: 10vh;
+  padding: .5rem 1rem;
+  background-color: rgb(215, 215, 215);
+  border-radius: 15px;
+  border: none;
+  box-shadow: rgb(94, 94, 94) .2px 1px 2px;
+  cursor: pointer;
+  transition: opacity 0s;
+}
+
+article button:active {
+  opacity: 0.67;
+}
+
+article {
+  margin: 2rem;
+}
+
+.saved-color {
+  padding: 3rem;
+  background-color: blueviolet;
 }
