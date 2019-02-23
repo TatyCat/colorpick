@@ -67,6 +67,7 @@ h1 {
   padding: 5rem;
   background-color: black;
   margin-bottom: 2rem;
+  border: solid 2px rgb(246, 246, 244);
 }
 
 article button {
@@ -93,4 +94,5 @@ article {
 .saved-color {
   padding: 3rem;
   background-color: blueviolet;
+  border: solid 2px rgb(246, 246, 244);
 }
