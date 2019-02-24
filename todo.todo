@@ -1,7 +1,3 @@
 text is easy to click/copy:
-
-//------
-Button to store color Saves:
-if:
-  Stored colors display hsla text:
-  Stored colors display their color:
+  Top HSLa Text:
+  both the text and color box in the color results secions, auto copies:

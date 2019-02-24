@@ -86,6 +86,7 @@ class Main extends Component {
               </div>
             </section>
           </article>
+          <footer></footer>
         </main >
       </>
     )

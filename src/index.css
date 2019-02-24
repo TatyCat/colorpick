@@ -184,9 +184,9 @@ article button {
   border: none;
   color: rgb(18, 18, 18);
   text-shadow: rgb(67, 67, 67) .5px .5px .5px;
-  /* box-shadow: .2px 1px 2px 14px rgb(94, 94, 94); */
   cursor: pointer;
   transition: opacity 0s;
+  font-size: calc(1.1vh + 1.1vw);
 }
 
 article button:active {
@@ -200,19 +200,27 @@ article {
 .saved-color {
   border: solid 2px rgb(246, 246, 244);
   border-radius: 2px;
-  padding: 0 20vw;
+  padding: 1vh 20vw;
 }
 
 ul {
   padding: 0;
-  font-size: calc(1.5vw + .3vh);
+  font-size: calc(1.7vw + .9vh);
+  white-space: nowrap;
 }
 
 li {
   display: flex;
-  justify-content: space-;
+  justify-content: space-evenly;
+  text-align: left;
+  padding: .3rem 2rem;
+  margin-right: 1vh;
 }
 
 ul li {
   list-style: none;
+}
+
+main {
+  margin-bottom: 1vh;
 }
