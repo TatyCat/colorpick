@@ -96,7 +96,7 @@ article {
 
 .saved-color {
   padding: 3rem;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   border: solid 2px rgb(246, 246, 244);
   border-radius: 2px;
 }

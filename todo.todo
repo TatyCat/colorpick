@@ -1,10 +1,7 @@
-get sliders to move:
-  
-
-slider event movement updates the state: 
-
-state updates the top section/header:
-
-state update changes the top text accordingly:
-
 text is easy to click/copy:
+
+//------
+Button to store color Saves:
+if:
+  Stored colors display hsla text:
+  Stored colors display their color:
