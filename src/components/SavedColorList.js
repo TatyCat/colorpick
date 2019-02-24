@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
-import Main from './components/Main'
+
 
 class SavedColorList extends Component {
+
+
   render() {
     return (
       <ul>
         <li>
-          <Main
-            {savedColors}
-          />
+          {Main.state.savedColors.forEach(function (item) {
+            console.log(item)
+              (< section > {item}</section >)
+          })}
         </li>
       </ul>
     );

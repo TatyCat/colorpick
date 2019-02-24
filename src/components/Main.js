@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import SavedColorList from './components/SavedColorList'
 
 class Main extends Component {
 
@@ -36,16 +35,7 @@ class Main extends Component {
 
   saveColor = () => {
     this.state.savedColors.push(`hsla(${this.state.hue}, ${this.state.saturation}%, ${this.state.lightness}%, ${this.state.alpha})`)
-    console.log(this.state.savedColors)
-    console.log(SavedColorList)
-
-    return (
-      <>
-        <SavedColorList />
-      </>
-
-    )
-    // hsla({ this.state.hue }, { this.state.saturation } %, { this.state.lightness } %, { this.state.alpha })
+    this.setState(this.state)
   }
 
   render() {
@@ -85,7 +75,15 @@ class Main extends Component {
             <section id="saved-section">
               <h2>Saved Colors</h2>
               <div className="saved-color">
-                <SavedColorList />
+
+                {this.state.savedColors.map((hsla, index) => {
+                  return (
+                    <ul key={index}>
+                      <li >{hsla}</li>
+                    </ul>
+                  )
+                })}
+
               </div>
             </section>
           </article>
