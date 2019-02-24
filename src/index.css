@@ -15,7 +15,7 @@ body {
 /* Header */
 
 header {
-  background-color: rgb(247, 247, 246);
+  background-color: #f7f7f6;
   font-size: calc(1.5vh + 1.5vw);
   font-family: 'Lato', 'Arvo', serif;
   border-bottom: solid 2px rgb(246, 246, 244);
@@ -23,7 +23,7 @@ header {
 
 h1 {
   margin: 0;
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
   text-shadow: rgb(116, 116, 116) -1px .5px .5px;
   letter-spacing: .3ch;
@@ -52,7 +52,7 @@ h1 {
   -webkit-transition: .2s;
   transition: opacity .2s;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 2px;
 }
 
 .slider::-moz-range-thumb {
@@ -65,7 +65,6 @@ h1 {
 
 #color-results {
   padding: 5rem;
-  background-color: black;
   margin-bottom: 2rem;
   border: solid 2px rgb(246, 246, 244);
 }
@@ -73,12 +72,14 @@ h1 {
 article button {
   display: block;
   margin: 2rem auto;
-  margin-bottom: 10vh;
-  padding: .5rem 1rem;
-  background-color: rgb(215, 215, 215);
-  border-radius: 15px;
+  margin-bottom: 9vh;
+  padding: .5rem .8rem;
+  background-color: white;
+  border-radius: 2px;
   border: none;
-  box-shadow: rgb(94, 94, 94) .2px 1px 2px;
+  color: rgb(18, 18, 18);
+  text-shadow: rgb(67, 67, 67) .5px .5px .5px;
+  /* box-shadow: .2px 1px 2px 14px rgb(94, 94, 94); */
   cursor: pointer;
   transition: opacity 0s;
 }
@@ -95,4 +96,5 @@ article {
   padding: 3rem;
   background-color: blueviolet;
   border: solid 2px rgb(246, 246, 244);
+  border-radius: 2px;
 }
