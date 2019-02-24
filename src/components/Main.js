@@ -74,16 +74,15 @@ class Main extends Component {
 
             <section id="saved-section">
               <h2>Saved Colors</h2>
-              <div className="saved-color">
-
+              <div>
                 {this.state.savedColors.map((hsla, index) => {
                   return (
                     <ul key={index}>
-                      <li >{hsla}</li>
+                      <li >{hsla} <span className="saved-color" style={{ backgroundColor: `${hsla}` }}></span>
+                      </li>
                     </ul>
                   )
                 })}
-
               </div>
             </section>
           </article>

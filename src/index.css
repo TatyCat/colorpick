@@ -95,8 +95,21 @@ article {
 }
 
 .saved-color {
-  padding: 3rem;
-  /* background-color: blueviolet; */
   border: solid 2px rgb(246, 246, 244);
   border-radius: 2px;
+  padding: 0 20vw;
+}
+
+ul {
+  padding: 0;
+  font-size: calc(1.5vw + .3vh);
+}
+
+li {
+  display: flex;
+  justify-content: space-;
+}
+
+ul li {
+  list-style: none;
 }
