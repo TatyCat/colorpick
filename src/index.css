@@ -42,6 +42,12 @@ h1 {
   text-align: center;
 }
 
+#slider-results:hover {
+  color: rgb(49, 49, 65);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 input[type=range] {
   -webkit-appearance: none;
   /* Hides the slider so that custom slider can be made */

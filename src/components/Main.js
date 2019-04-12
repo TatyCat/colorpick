@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 class Main extends Component {
-
   state = {
     hue: 0,
     saturation: 100,
@@ -34,8 +33,16 @@ class Main extends Component {
   }
 
   saveColor = () => {
-    this.state.savedColors.push(`hsla(${this.state.hue}, ${this.state.saturation}%, ${this.state.lightness}%, ${this.state.alpha})`)
-    this.setState(this.state)
+    this.setState({
+      savedColors: this.state.savedColors.concat(`hsla(${this.state.hue}, ${this.state.saturation}%, ${this.state.lightness}%, ${this.state.alpha})`)
+    })
+  }
+
+  selectText = event => {
+    console.log(event.target.innerText)
+    event.target.innerText.select()
+    document.execCommand("copy")
+
   }
 
   render() {
@@ -48,7 +55,7 @@ class Main extends Component {
 
           </section>
           <article >
-            <p id="slider-results">HSLa ({this.state.hue}, {this.state.saturation}%,  {this.state.lightness}%, {this.state.alpha})</p>
+            <p onClick={this.selectText} id="slider-results">HSLa ({this.state.hue}, {this.state.saturation}%,  {this.state.lightness}%, {this.state.alpha})</p>
             <p>Hue</p>
             <section className="slidecontainer">
               <input onChange={this.updateHue} step="1" type="range" min="0" max="360" value={this.state.hue} className="slider" id="hue" />
@@ -68,6 +75,7 @@ class Main extends Component {
             <section className="slidecontainer">
               <input onChange={this.updateAlpha} type="range" step=".1" min="0" max="1" value={this.state.alpha} className="slider" id="alpha" />
             </section>
+
             <button style={{
               boxShadow: `.2px 1px .3px 6px hsla(${this.state.hue}, ${this.state.saturation}%, ${this.state.lightness}%, ${this.state.alpha}) inset, .2px 1px 1px 3px hsla(${this.state.hue}, ${this.state.saturation}%, ${this.state.lightness}%, ${this.state.alpha})`
             }} onClick={this.saveColor}>Store This Color</button>
